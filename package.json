@@ -1,0 +1,31 @@
+{
+  "name": "read-my-toon",
+  "version": "1.0.0",
+  "description": "Convert README to an interactive webtoon",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "readmytoon": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/cli/index.ts --format cjs --dts",
+    "dev": "ts-node src/cli/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.1.38",
+    "@langchain/openai": "^1.4.1",
+    "commander": "^14.0.3",
+    "dotenv": "^17.3.1",
+    "langchain": "^1.2.39",
+    "openai": "^6.33.0"
+  }
+}
